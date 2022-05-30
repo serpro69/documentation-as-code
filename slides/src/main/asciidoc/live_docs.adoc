@@ -134,12 +134,10 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 
 == How many confluence bookmarks do you have?
 
-If you need to bookmark confluence pages, it's because they're hard to find
 
-[cols="33,33,33"]
+[cols="33a,33a,33a"]
 |===
-3*|
-3*|
+3+<|If you need to bookmark confluence pages, it's because they're hard to find
 |image:mscott_what_do_you_use_confluence_for.png[]
 |image:dwight_to_keep_secrets.png[]
 |image:mscott_surprise.png[]
@@ -147,6 +145,9 @@ If you need to bookmark confluence pages, it's because they're hard to find
 
 == Where documentation lives?
 
+[cols="30a,70a"]
+|===
+<|
 * Code
 * Confluence
 * Jira
@@ -154,6 +155,8 @@ If you need to bookmark confluence pages, it's because they're hard to find
 * E-mails
 * Teams
 * Whiteboards
+|
+|===
 
 == Confluence Is Where Documentation Goes To Die
 
@@ -168,26 +171,27 @@ The one thing you can be sure of if you're using Confluence to document your sof
 * When developers don't trust that the documentation reflects the true "state of the world", they also stop relying on it, and hence, stop improving it as well.
 ** And thus the cycle goes on and on.
 * Out of date documentation can sometimes be worse than no documentation, leading you on a confusing multi-day expeditions as you try to understand the codebase while comparing it to outdated docs.
-|image:a_new_developer.png[]
+
+>|image:a_new_developer.png[{image-60-width}]
 |===
 
 == "`Great software does not need documentation`" (...or tests)
 
 You don’t write documentation for yourself. You write it for the new team member who’s joining soon, your replacement, and even for your poor future self who, 6-months later, is going to look at the code you’re working on now , and think "Who the hell wrote this and what does it even mean?" (_spoiler: It was you who wrote it_)
 
-image::still_working_on_the_goat_head_issue.png[]
+image::still_working_on_the_goat_head_issue.png[width="200%"]
 
 == Why?
 
-[cols="30a,70a"]
+[cols="60a,40a"]
 |===
-|
+>|
 >|image:uncle_sam_needs_your_docs.png[]
 |===
 
 == Common Causes
 
-[cols="30a,70a"]
+[cols="40a,60a"]
 |===
 |
 * Outside of normal workflow
@@ -199,5 +203,24 @@ image::still_working_on_the_goat_head_issue.png[]
 
 >| image:now_you_can_start_with_documentation.png[]
 |===
+
+== Confluence – A Documentation Graveyard 2.0
+
+**One of the reasons why Confluence ends up being a graveyard for docs is that it is outside the normal software development workflow.**
+
+Only after the code is merged do you remember (that is, if you remember) to go to this separate place, and only then you start thinking about how to document what you had already released.
+
+Doesn't all of this seem backwards to you?
+
+== What makes good documentation?
+
+* High-level architecture designs.
+* High-level overviews of each part of the library, touching on key objects and methods.
+* Practical examples showing how to handle common use cases.
+* Full API documentation for all public functionality.
+* Internal functionality should ideally be also documented to help contributors understand the code better.
+* Comments throughout the code.
+
+== How?
 
 // TODO == Documentation needs to grow with the software
