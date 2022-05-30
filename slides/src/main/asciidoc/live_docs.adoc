@@ -136,10 +136,10 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 
 If you need to bookmark confluence pages, it's because they're hard to find
 
-[cols="33a,33a,33a"]
+[cols="33,33,33"]
 |===
-3+|{empty}
-3+|{empty}
+3*|
+3*|
 |image:mscott_what_do_you_use_confluence_for.png[]
 |image:dwight_to_keep_secrets.png[]
 |image:mscott_surprise.png[]
@@ -176,5 +176,28 @@ The one thing you can be sure of if you're using Confluence to document your sof
 You don’t write documentation for yourself. You write it for the new team member who’s joining soon, your replacement, and even for your poor future self who, 6-months later, is going to look at the code you’re working on now , and think "Who the hell wrote this and what does it even mean?" (_spoiler: It was you who wrote it_)
 
 image::still_working_on_the_goat_head_issue.png[]
+
+== Why?
+
+[cols="30a,70a"]
+|===
+|
+>|image:uncle_sam_needs_your_docs.png[]
+|===
+
+== Common Causes
+
+[cols="30a,70a"]
+|===
+|
+* Outside of normal workflow
+* Requires different skillset
+* Frequent code changes
+* Time pressure
+* Lack of interest
+* Laziness
+
+>| image:now_you_can_start_with_documentation.png[]
+|===
 
 // TODO == Documentation needs to grow with the software
