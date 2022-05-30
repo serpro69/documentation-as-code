@@ -136,13 +136,27 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 
 [cols="33a,33a,33a"]
 |===
-3+|{empty}
-3+|If you need to bookmark confluence pages, it's because they're hard to find
-3+|{empty}
-3+|{empty}
+3*<.^|
+3*|If you need to bookmark confluence pages, it's because they're hard to find
+3*<.^|
+3*<.^|
 |image:mscott_what_do_you_use_confluence_for.png[]
 |image:dwight_to_keep_secrets.png[]
 |image:mscott_surprise.png[]
 |===
+
+== Where documentation lives?
+
+* Code
+* Confluence
+* Jira
+* Code Reviews
+* E-mails
+* Teams
+* Whiteboards
+
+== Confluence Is Where Documentation Goes To Die
+
+The one thing you can be sure of if you're using Confluence to document your software is that, **given time, any documentation you have written on Confluence will be hopelessly out of date.**
 
 // TODO == Documentation needs to grow with the software
