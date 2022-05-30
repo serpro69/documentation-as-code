@@ -115,7 +115,7 @@ But it is about **keeping the documentation alive.**
 
 == If it isn't documented – it doesn't exist
 
-> **"If it isn't documented, it doesn't exist."** Not only does it have to be doc'd, but it was to be explained and taught and demonstrated. Do that, and people will be excited -- not about your documentation, but about your product.{empty}footnote:[http://www.mikepope.com/blog/DisplayBlog.aspx?permalink=1680[source]]
+> **"If it isn't documented, it doesn't exist."** Not only does it have to be doc'd, but it was to be explained and taught and demonstrated. Do that, and people will be excited -- not about your documentation, but about your product.{empty}footnote:[http://www.mikepope.com/blog/DisplayBlog.aspx?permalink=1680]
 
 == Lack of documentation is the reason good libraries fail
 
@@ -129,6 +129,21 @@ But it is about **keeping the documentation alive.**
 
 image:open-an-issue_vs_read-the-docs.png[]
 
-==
+== But why don't people read the docs?
+
+// TODO leave empty?
+
+== How many confluence bookmarks do you have?
+
+[cols="33a,33a,33a"]
+|===
+3+|
+3+|If you need to bookmark confluence pages, it's because they're hard to find
+3+|
+3+|
+|image:mscott_what_do_you_use_confluence_for.png[]
+|image:dwight_to_keep_secrets.png[]
+|image:mscott_surprise.png[]
+|===
 
 // TODO == Documentation needs to grow with the software
