@@ -1,0 +1,77 @@
+= Living Docs || Documentation as Code
+Serhii Prodanov, Senior Managing Consultant, Cegal AS
+:revealjs_theme: black
+:revealjs_customtheme: white_theme.css
+:revealjs_slideNumber:
+:revealjs_history:
+:revealjs_progress:
+:encoding: UTF-8
+:lang: eng
+include::_doc_general_attributes.adoc[]
+:doctype: article
+:toclevels: 3
+:imagesdir: images
+:source-highlighter: highlightjs
+:highlightjsdir: highlight
+:icons: font
+:iconfont-remote!:
+:iconfont-name: font-awesome-4.7.0/css/font-awesome
+:revealjs_mouseWheel: true
+:revealjs_center: false
+:revealjs_transition: none
+:revealjs_width: 1600
+:revealjs_height: 900
+:stem: latexmath
+
+//== Часть 1. Введение
+:!figure-caption:
+
+icon:envelope[size=lg] sergei.prodanov@cegal.com
+
+//[%notitle]
+== `$ echo whoami`
+
+[cols="30a,70a"]
+|===
+.^|image::me.jpg[]
+.^|
+* Now: Developer in Elhub / Test Competency Lead in Sysco by day, tester by calling, searching for the Ultimate Question by night.
+* In the past:
+** Elhub – a ton of test automation and some cloud platform work
+** Accenture, Latvia – test automation team lead
+** TCS, India – test automation guy, test lead, mobile-app tester
+** ...a bunch of other things
+* Fun fact: Some people call me Sergio ...for no immediately apparent reasons
+* Not really a fan of Twitter and social media, but you can stalk me on icon:github[size=lg] https://github.com/serpro69
+|===
+
+== Everything you see here is on GitHub
+
+[cols="30a,70a"]
+|===
+.^|icon:github-alt[size=3x]
+.^|
+* Slides: https://serpro69.github.io/documentation-as-code[serpro69.github.io/documentation-as-code]
+* Source: https://github.com/serpro69/documentation-as-code[github.com/serpro69/documentation-as-code]
+|===
+
+[transition="fade-out, slide-in"]
+== What?
+
+image::self_documenting_code.png[]
+
+[transition="fade-in, fade-out"]
+== What?
+
+[cols="30a,70a"]
+|===
+.<|
+[%step]
+* Hard to find
+* Out-of-Date
+* Misleading
+* Hard to read/understand
+* Incomplete
+* Lacking altogether
+.<|image::documentation_is_key.png[]
+|===
