@@ -33,15 +33,15 @@ icon:envelope[size=lg] sergei.prodanov@cegal.com
 
 [cols="30a,70a"]
 |===
-.^|image::me.jpg[]
-.^|
-* Now: Developer in Elhub / Test Competency Lead in Sysco by day, tester by calling, searching for the Ultimate Question by night.
+|image::me.jpg[]
+|
+* DevOps in Elhub / NoE Lead in Cegal by day, quality engineer by calling, searching for The Ultimate Question by night.
 * In the past:
-** Elhub – a ton of test automation and some cloud platform work
-** Accenture, Latvia – test automation team lead
-** TCS, India – test automation guy, test lead, mobile-app tester
+** Elhub – a ton of test automation and some cloud platform development
+** Accenture, Latvia – test automation team lead (Big Data)
+** TCS, India – test automation guy, test lead/mentor, mobile-app tester
 ** ...a bunch of other things
-* Fun fact: Some people call me Sergio ...for no immediately apparent reasons
+* Fun fact: some people call me Sergio
 * Not really a fan of Twitter and social media, but you can stalk me on icon:github[size=lg] https://github.com/serpro69
 |===
 
