@@ -71,20 +71,22 @@ icon:github[size=lg] https://github.com/serpro69[github.com/serpro69]
 [%notitle]
 == Disclaimer
 
-It really is not about the tools.
-
-'''
+[NOTE]
+====
+This presentation is not about the tools.
 
 > A tool is just a tool, it's the principles that matter.
+====
 
 [%notitle]
 == Disclaimer
 
+[NOTE]
+====
 It’s also not about "Living Documentation" that comes from BDD.
 
-'''
-
 But it is about **keeping the documentation alive.**
+====
 
 [transition="fade-out, slide-in"]
 == What?
