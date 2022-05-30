@@ -167,17 +167,28 @@ The one thing you can be sure of if you're using Confluence to document your sof
 [cols="60a,40a"]
 |===
 |
-* The moment your documentation starts to be out of date - it starts loosing its value.
-* When developers don't trust that the documentation reflects the true "state of the world", they also stop relying on it, and hence, stop improving it as well.
+* The moment your documentation starts to be **out of date** - it **starts loosing its value**.
+* When **developers don't trust** that the **documentation** reflects the true "state of the world", they also **stop relying on it**, and hence, **stop improving it** as well.
 ** And thus the cycle goes on and on.
-* Out of date documentation can sometimes be worse than no documentation, leading you on a confusing multi-day expeditions as you try to understand the codebase while comparing it to outdated docs.
+* **Out of date documentation can sometimes be worse than no documentation**, leading you on a confusing multi-day expeditions as you try to understand the codebase while comparing it to outdated docs.
 
->|image:a_new_developer.png[{image-60-width}]
+>|image:a_new_developer.png[{image-80-width}]
 |===
 
 == "`Great software does not need documentation`" (...or tests)
 
-You don’t write documentation for yourself. You write it for the new team member who’s joining soon, your replacement, and even for your poor future self who, 6-months later, is going to look at the code you’re working on now , and think "Who the hell wrote this and what does it even mean?" (_spoiler: It was you who wrote it_)
+[cols="80a,25a"]
+|===
+|
+You don’t write documentation for yourself.
+
+You write it for the new team member who’s joining soon, your future replacement, and even for your poor future self.
+
+In 6-months you are going to look at the code you're working on now and think: _"Who the hell wrote this and what does it even mean?"_
+
+(_spoiler: It was you who wrote it_)
+|{empty}
+|===
 
 image::still_working_on_the_goat_head_issue.png[width="200%"]
 
@@ -191,7 +202,7 @@ image::still_working_on_the_goat_head_issue.png[width="200%"]
 
 == Common Causes
 
-[cols="40a,60a"]
+[cols="40a,10,50a"]
 |===
 |
 * Outside of normal workflow
@@ -201,16 +212,23 @@ image::still_working_on_the_goat_head_issue.png[width="200%"]
 * Lack of interest
 * Laziness
 
+>|{empty}
+
 >| image:now_you_can_start_with_documentation.png[]
 |===
 
 == Confluence – A Documentation Graveyard 2.0
 
+[cols="80a,35a"]
+|===
+|
 **One of the reasons why Confluence ends up being a graveyard for docs is that it is outside the normal software development workflow.**
 
 Only after the code is merged do you remember (that is, if you remember) to go to this separate place, and only then you start thinking about how to document what you had already released.
 
 Doesn't all of this seem backwards to you?
+|
+|===
 
 == What makes good documentation?
 
@@ -222,5 +240,16 @@ Doesn't all of this seem backwards to you?
 * Comments throughout the code.
 
 == How?
+
+[%step]
+* Put your documentation **in source control with the code** it is describing
+* **Ask for documentation updates in pull requests** when it’s appropriate, just like you would expect tests for a code change
+* Create a **documentation style guide** for your team to follow
+** "Every big architectural decision must be recorded in as an ADR"
+(icon:info-circle[] _ADRs are also stored with the code they are related to_)
+** "Every repo needs a high level architecture diagram describing the main data structures and processes”
+** "Every repo must have a README with A, B, C sections"
+** "Every repo must have API documentation"
+** ...
 
 // TODO == Documentation needs to grow with the software
