@@ -134,12 +134,12 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 
 == How many confluence bookmarks do you have?
 
+If you need to bookmark confluence pages, it's because they're hard to find
+
 [cols="33a,33a,33a"]
 |===
-3*<.^|
-3*|If you need to bookmark confluence pages, it's because they're hard to find
-3*<.^|
-3*<.^|
+3+|{empty}
+3+|{empty}
 |image:mscott_what_do_you_use_confluence_for.png[]
 |image:dwight_to_keep_secrets.png[]
 |image:mscott_surprise.png[]
@@ -158,5 +158,23 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 == Confluence Is Where Documentation Goes To Die
 
 The one thing you can be sure of if you're using Confluence to document your software is that, **given time, any documentation you have written on Confluence will be hopelessly out of date.**
+
+== Lack of Trust `==` Significantly Reduced Value
+
+[cols="60a,40a"]
+|===
+|
+* The moment your documentation starts to be out of date - it starts loosing its value.
+* When developers don't trust that the documentation reflects the true "state of the world", they also stop relying on it, and hence, stop improving it as well.
+** And thus the cycle goes on and on.
+* Out of date documentation can sometimes be worse than no documentation, leading you on a confusing multi-day expeditions as you try to understand the codebase while comparing it to outdated docs.
+|image:a_new_developer.png[]
+|===
+
+== "`Great software does not need documentation`" (...or tests)
+
+You don’t write documentation for yourself. You write it for the new team member who’s joining soon, your replacement, and even for your poor future self who, 6-months later, is going to look at the code you’re working on now , and think "Who the hell wrote this and what does it even mean?" (_spoiler: It was you who wrote it_)
+
+image::still_working_on_the_goat_head_issue.png[]
 
 // TODO == Documentation needs to grow with the software
