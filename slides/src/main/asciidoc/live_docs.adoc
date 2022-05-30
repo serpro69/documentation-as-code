@@ -57,6 +57,12 @@ icon:envelope[size=lg] sergei.prodanov@cegal.com
 * Source: https://github.com/serpro69/documentation-as-code[github.com/serpro69/documentation-as-code]
 |===
 
+== PLAN
+
+* What? (...is the problem)
+* Why? (...does it happen)
+* How? (...to solve it)
+
 [%notitle]
 == Disclaimer
 
@@ -111,3 +117,11 @@ But it is about **keeping the documentation alive.**
 
 > There's one other thing which can really make or break a JavaScript library, and it's surprising how often it's overlooked, because **the same thing makes or breaks an awful lot of software in other fields: documentation**. The greatest library in the world would fail if the only way to learn it was reading the code. **There is absolutely no substitute for full, well-written documentation.**
 (James Bennett, https://www.b-list.org/weblog/2007/jan/22/choosing-javascript-library/[choosing a JavaScript library])
+
+== "Did you read the docs before opening this issue?"
+
+image:open-an-issue_vs_read-the-docs.png[]
+
+==
+
+// TODO == Documentation needs to grow with the software
