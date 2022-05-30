@@ -58,20 +58,24 @@ icon:envelope[size=lg] sergei.prodanov@cegal.com
 [transition="fade-out, slide-in"]
 == What?
 
-image::self_documenting_code.png[]
+[cols="40a,60a"]
+|===
+|
+|image::self_documenting_code.png[{image-60-width}]
+|===
 
 [transition="fade-in, fade-out"]
 == What?
 
-[cols="30a,70a"]
+[cols="40a,60a"]
 |===
-.<|
-[%step]
+|[%step]
 * Hard to find
 * Out-of-Date
 * Misleading
 * Hard to read/understand
 * Incomplete
 * Lacking altogether
-.<|image::documentation_is_key.png[]
+
+|image::documentation_is_key.png[{image-60-width}]
 |===
