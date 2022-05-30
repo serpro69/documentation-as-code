@@ -1,5 +1,6 @@
 = Living Docs || Documentation as Code
 Serhii Prodanov, Senior Managing Consultant, Cegal AS
+:autofit-option:
 :revealjs_theme: black
 :revealjs_customtheme: white_theme.css
 :revealjs_slideNumber:
@@ -19,8 +20,8 @@ include::_doc_general_attributes.adoc[]
 :revealjs_mouseWheel: true
 :revealjs_center: false
 :revealjs_transition: none
-:revealjs_width: 1600
-:revealjs_height: 900
+:revealjs_width: 1960
+:revealjs_height: 1000
 :stem: latexmath
 
 //== Часть 1. Введение
@@ -45,8 +46,8 @@ icon:github[size=lg] https://github.com/serpro69[github.com/serpro69]
 * "`Everything as icon:file-code-o[] code`" evangelist
 * In the past:
 ** Elhub – a ton of test automation and some cloud platform development
-** Accenture, Latvia – test automation team lead (Big Data)
-** TCS, India – test automation guy, test lead/mentor, mobile-app tester
+** Accenture (Latvia) – test automation team lead (Big Data)
+** TCS (India) – test automation, test lead/mentor
 ** ...a bunch of other things
 * Fun fact: some people call me Sergio
 |===
