@@ -252,6 +252,7 @@ Doesn't all of this seem backwards to you?
 ** "Every repo must have API documentation"
 ** ...
 
+[transition="fade-out, slide-in"]
 == An example of a well-documented software
 
 [transition="fade-in, fade-out"]
@@ -291,7 +292,7 @@ image::cypress_cicd.png[]
 
 == What if I told you
 
-image::morpheus.png[width="100%"]
+image::morpheus.png[width="80%"]
 
 == The Problem
 
