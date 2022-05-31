@@ -291,7 +291,7 @@ image::cypress_cicd.png[]
 
 == What if I told you
 
-image::morpheus.png[width="180%"]
+image::morpheus.png[width="100%"]
 
 == The Problem
 
@@ -325,72 +325,18 @@ image::morpheus.png[width="180%"]
 
 [cols="70a,30a"]
 |===
-|
-**What distinguishes Markdown** from many other lightweight markup syntaxes, which are arguably often easier to write, **is its readability**.
-|{empty}
-|
-.As Gruber writes:
-> The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
+|**What distinguishes Markdown** from many other lightweight markup syntaxes, which are arguably often easier to write, **is its readability**.
 |{empty}
 |===
 
+<<<
+
+.As Gruber writes:
+> The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
 
 == Markdown vs. Asciidoc
 
-[cols="50a,50a"]
-|===
-|
-[source,markdown]
-----
-1.  List item one.
-
-    List item one continued with a second paragraph followed by an
-    Indented block.
-
-        $ ls *.sh
-        $ mv *.sh ~/tmp
-
-    List item continued with a third paragraph.
-
-2.  List item two continued with an open block.
-
-    This paragraph is part of the preceding list item.
-
-1. This list is nested and does not require explicit item continuation.
-
-       This paragraph is part of the preceding list item.
-
-2. List item b.
-
-    This paragraph belongs to item two of the outer list.
-----
-|
-[source,asciidoc]
-----
-1. List item one.
-+
-List item one continued with a second paragraph followed by an
-Indented block.
-+
-.................
-$ ls *.sh
-$ mv *.sh ~/tmp
-.................
-+
-List item continued with a third paragraph.
-2. List item two continued with an open block.
-+
---
-This paragraph is part of the preceding list item.
-a. This list is nested and does not require explicit item
-continuation.
-+
-This paragraph is part of the preceding list item.
-b. List item b.
-This paragraph belongs to item two of the outer list.
---
-----
-|===
+image::markdown_vs_asciidoc.png[]
 
 == What next?
 
@@ -422,4 +368,3 @@ Whichever tool you pick, it should have a very low entry threshold...
 |image::reuse.png[]
 |===
 
-----
