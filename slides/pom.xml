@@ -18,10 +18,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <asciidoctor.maven.plugin.version>2.2.2</asciidoctor.maven.plugin.version>
+        <asciidoctor.maven.plugin.version>1.6.0</asciidoctor.maven.plugin.version>
         <project.slides.directory>${project.build.directory}/generated-slides</project.slides.directory>
-        <revealjs.version>4.3.1</revealjs.version>
-        <asciidoctor-revealjs.version>4.1.0-rc.5</asciidoctor-revealjs.version>
+        <revealjs.version>3.9.2</revealjs.version>
+        <asciidoctor-revealjs.version>2.0.1</asciidoctor-revealjs.version>
     </properties>
 
     <build>
