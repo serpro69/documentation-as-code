@@ -67,6 +67,17 @@ icon:github[size=lg] https://github.com/serpro69[github.com/serpro69]
 * Why? (...does it happen)
 * How? (...to solve it)
 
+[.notes]
+--
+The plan for the presentation is quite simple.
+
+First I want to discuss “What” are the problems that we usually face when it comes to documenting software.
+
+After that we’ll look at some of reasons for “Why” this happens.
+
+And finally I will discuss one of the approaches on “How” I think these issues can be solved.
+--
+
 [%notitle]
 == Disclaimer
 
@@ -76,6 +87,11 @@ This presentation is not about the tools.
 
 > A tool is just a tool, it's the principles that matter.
 ====
+
+[.notes]
+--
+Just a small disclaimer, this isn’t going to be about any tool in particular, although I will be using some tools in the demo.
+--
 
 [%notitle]
 == Disclaimer
@@ -87,6 +103,12 @@ It’s also not about "Living Documentation" that comes from BDD.
 But it is about **keeping the documentation alive.**
 ====
 
+[.notes]
+--
+It’s also not about “Living Documentation” term that comes from BDD.
+Although we will discuss the same problems – keeping the documentation up to date and well, documenting what your software does
+--
+
 [transition="fade-out, slide-in"]
 == What?
 
@@ -95,6 +117,13 @@ But it is about **keeping the documentation alive.**
 |{empty}
 .^|image::self_documenting_code.png[{image-50-width}]
 |===
+
+[.notes]
+--
+Let’s begin by trying to understand the problem before we move on to the solutions.
+
+So what are some of the common issues with software documentation?
+--
 
 [transition="fade-in, fade-out"]
 == What?
@@ -112,9 +141,35 @@ But it is about **keeping the documentation alive.**
 .^|image::documentation_is_key.png[{image-50-width}]
 |===
 
+[.notes]
+--
+These are the one’s I’ve experienced most often.
+
+Documentation can be spread out in multiple mediums, thus making it, among other things, hard to find, not to mention hard to tie it all up together.
+
+It can be, and unfortunately often is, unmaintained on a regular basis, and thus becomes simply out of date.
+
+It may not always represent the real world, as in, the docs can be saying “ABC”, and the software is really doing “XYZ”.
+
+A person who was writing a particular piece of documentation might not had the target audience in mind, and thus it becomes hard to read and understand for those to whom this particular part of documentation is most relevant.
+
+It can be simply incomplete, and of course it is sometimes lacking altogether.
+--
+
 == If it isn't documented – it doesn't exist
 
 > **"If it isn't documented, it doesn't exist."** Not only does it have to be doc'd, but it was to be explained and taught and demonstrated. Do that, and people will be excited -- not about your documentation, but about your product.{empty}footnote:[http://www.mikepope.com/blog/DisplayBlog.aspx?permalink=1680]
+
+[.notes]
+--
+It might not be very obvious right away, but if you think about it – you will see the truth in this simple statement.
+
+Who cares about your new shiny feature if it’s undocumented and no one knows what it does or how to use it?
+
+Chances are, if it’s completely undocumented no one will even know about it.
+
+Which is why you have things like changelogs, which are of course also part of documentation.
+--
 
 == Lack of documentation is the reason good libraries fail
 
@@ -124,9 +179,27 @@ But it is about **keeping the documentation alive.**
 > There's one other thing which can really make or break a JavaScript library, and it's surprising how often it's overlooked, because **the same thing makes or breaks an awful lot of software in other fields: documentation**. The greatest library in the world would fail if the only way to learn it was reading the code. **There is absolutely no substitute for full, well-written documentation.**
 (James Bennett, https://www.b-list.org/weblog/2007/jan/22/choosing-javascript-library/[choosing a JavaScript library])
 
+[.notes]
+--
+And this is a problem in any software ecosystem, whichever programming stack you use, and has been mentioned by many people around the industry.
+
+If you’re the only one who understands what your library does – it doesn’t do any good. And the greatest library would fail if the only way to learn and understand it was reading the code.
+--
+
 == "Did you read the docs before opening this issue?"
 
 image:open-an-issue_vs_read-the-docs.png[width="250%"]
+
+[.notes]
+--
+I’m sure everyone has experienced a situation like this.
+
+The problem is not that people don’t like to read, which is also true of course. Who ever reads a user manual when they buy a some new home appliance? You just plug it in, press the red button, and then figure out the rest, right.
+
+But the bigger problem, when it comes to software, is that documentation is really hard to find.
+
+You get a new person in the project, and you get bombarded with a ton of questions in Teams, for example. Not because something is undocumented, although that problem is also there in some cases, but even if it is documented – people still can’t find it.
+--
 
 == But why don't people read the docs?
 
@@ -163,9 +236,27 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 |
 |===
 
+[.notes]
+--
+Code mostly in form of inline comments, something like javadocs or jsdocs, sometimes even in the form of logging statements.
+
+If Confluence / Jira is used in the project – chances are this is where most of documentation will live if you’re using these tools. And you might ask “Why use jira for documenting things if you have confluence?” But if you think about it – there are a lot of things that happen in jira, like decisions that are made for implementing a new feature or fixing a bug, which just stay there in those jira tickets, and they consequentially become part of your documentation.
+
+Some documentation, like decision making, could end up in Code Reviews.
+
+Some documentation can be shared in emails and teams.
+
+And of course we can’t forget the whiteboards that are never erased.
+--
+
 == Confluence Is Where Documentation Goes To Die
 
 The one thing you can be sure of if you're using Confluence to document your software is that, **given time, any documentation you have written on Confluence will be hopelessly out of date.**
+
+[.notes]
+--
+I sometimes think of confluence is a kind of documentation graveyard. You document something, it eventually gets hopelessly out of date and dies out. And this happens for several reasons.
+--
 
 == Lack of Trust `==` Significantly Reduced Value
 
@@ -197,6 +288,15 @@ In 6-months you are going to look at the code you're working on now and think: _
 
 image::still_working_on_the_goat_head_issue.png[width="200%"]
 
+[.notes]
+--
+I like to joke how great software does not need tests.
+
+And obviously, if it is in fact “great software”, it also shouldn’t need documentation.
+
+The thing is, you don’t write documentation for your present self.
+--
+
 == Why?
 
 [cols="60a,40a"]
@@ -204,6 +304,13 @@ image::still_working_on_the_goat_head_issue.png[width="200%"]
 >|
 >|image:uncle_sam_needs_your_docs.png[]
 |===
+
+[.notes]
+--
+But enough about the problem itself, let's look at the root cause.
+
+So why do we, as developers, often write poor documentation?
+--
 
 == Common Causes
 
@@ -222,6 +329,21 @@ image::still_working_on_the_goat_head_issue.png[width="200%"]
 >| image:now_you_can_start_with_documentation.png[]
 |===
 
+[.notes]
+--
+The process of documenting happens outside of the development workflow.
+
+When you’re writing code it does make sense to you -after all, it’s you who’s writing it. So you don’t even consider how another person will perceive your code.
+
+Proper documentation requires time and effort. Writing is simply not an easy task. Add to this constant pressure from your boss to deliver something, and you will never even consider writing docs.
+
+Agile development is a fast, unforgiving methodology, and in a sense it doesn’t encourage comprehensive documentation. The reason is simple; the code changes too frequently, and that makes it hard to document. But also in this particular case I think that some people just misunderstand the what agile is and take things like agile manifesto, which says “working software over comprehensive documentation” too literally.
+
+And of course pure laziness, because, c’mon, writing documentation can really be boring sometimes, and if you don’t have any processes and complete lack of interest to do so, then of course you will never overcome the laziness.
+
+Now, I’m not going to address laziness in this talk or how to develop a “writer’s skillset”, but some of these things we can actually improve upon or eliminate altogether.
+--
+
 == Confluence – A Documentation Graveyard 2.0
 
 [cols="80a,35a"]
@@ -235,6 +357,13 @@ Doesn't all of this seem backwards to you?
 |
 |===
 
+[.notes]
+--
+So I’d like to address the two issues that I mentioned previously, that is:
+- documenting happens outside of normal workflow
+- frequent changes to software are not making it easier to keep documentation up-to-date
+--
+
 == What makes good documentation?
 
 * High-level architecture designs.
@@ -243,6 +372,11 @@ Doesn't all of this seem backwards to you?
 * Full API documentation for all public functionality.
 * Internal functionality should ideally be also documented to help contributors understand the code better.
 * Comments throughout the code.
+
+[.notes]
+--
+But before we proceed, let’s see what makes up good documentation in general.
+--
 
 == How?
 
@@ -257,11 +391,41 @@ Doesn't all of this seem backwards to you?
 ** "Every repo must have API documentation"
 ** ...
 
+[.notes]
+--
+So how can we fix this?
+
+First and foremost, documentation must live as close to code as possible, that is – ideally it should all be in the same source code repository.
+
+What does this give us?
+
+1. You don’t need to switch contexts while reviewing changes to the code. Since the docs are in the code, you will be able to see both the docs changes and code changes in the same PR.
+
+2. Since it’s git, it’s easier to review documentation changes. Yes, you could say that confluence has some sort of “diffing” functionality where you can compare one page to another. But is that as easy to use as a ‘git diff’?
+
+Next you need to incorporate documentation writing in the development process, that is, you can now start asking for documentation changes in the code-review, if they’re lacking.
+
+And last – make a guideline that developers must follow.
+--
+
 [transition="fade-out, slide-in"]
 == An example of a well-documented software
 
 [transition="fade-in, fade-out"]
 == An example of a well-documented software
+
+[.notes]
+--
+So this isn't the only good example. Thankfully there is a lot of great software out there that is well documented. But this is a good example in showing how comprehensive documentation can be.
+
+Cypress is basically a test-automation tool. And how much documentation could you need from software like that?
+
+Well, it turns out - a lot.
+
+If you have looked at their docs – they’re very good and include a lot of useful information.
+
+In fact, initially their popularity grew considerably because of how well-documented it is. I can't say that Cypress is the best browser-testing framework out there. It does its job, but it also has good enough competition. But it does stand out in how well documented it is.
+--
 
 image::cypress_why.png[]
 
@@ -269,6 +433,11 @@ image::cypress_why.png[]
 == An example of a well-documented software
 
 image::cypress_guides.png[]
+
+[.notes]
+--
+They have a bunch of guides, from simple “Getting Started” guidelines to more advanced things covering parallelization, cross-browser testing, and so on.
+--
 
 [transition="fade-in, fade-out"]
 == An example of a well-documented software
@@ -285,6 +454,11 @@ image::cypress_plugins.png[]
 
 image::cypress_examples.png[]
 
+[.notes]
+--
+They have a huge collection of tutorials and examples, including videos that are made by the people who develop Cypress.
+--
+
 [transition="fade-in, fade-out"]
 == An example of a well-documented software
 
@@ -295,9 +469,25 @@ image::cypress_testing_strategies.png[]
 
 image::cypress_cicd.png[]
 
+[.notes]
+--
+They even describe how to use Cypress in combination with other third-party software, for example how to setup CI using different CI tools.
+
+Another project might think: “Well, we’re not developing Jenkins, why should we spend our time describing how to use our tool with Jenkins then?”
+
+And these guys actually do describe that, including providing real-world examples that actually run on different CI servers.
+--
+
 == What if I told you
 
 image::morpheus.png[width="80%"]
+
+[.notes]
+--
+Let's say you're a developer in a project. You probably know where the source code is. So generally speaking finding application code is easy for you.
+
+How about finding documentation for that code? Is it as easy? Understanding it? Seeing how it changed and evolved along with the software? You see where I'm going with this?
+--
 
 == The Problem
 
@@ -307,6 +497,13 @@ image::morpheus.png[width="80%"]
 |
 |===
 
+[.notes]
+--
+So how can we keep all the documentation with the source code? And at the same time make it easy to write and review, as well as make it accessible to everyone.
+
+And by everyone I mean people within different roles, because as we saw before, different documentation should be targeted differently depending on your audience.
+--
+
 [transition="fade-out, slide-in"]
 == The Solution
 
@@ -314,6 +511,13 @@ image::morpheus.png[width="80%"]
 == The Solution
 
 **Markdown**
+
+[.notes]
+--
+One word – markdown.
+
+Well, it could potentially be other formats, but it needs some must-have properties.
+--
 
 [transition="fade-in, fade-out"]
 == Markdown
@@ -325,6 +529,21 @@ image::morpheus.png[width="80%"]
 * Easier to write than HTML
 * Eeasily converted to HTML
 * Can be used by anyone, not just developers
+
+[.notes]
+--
+First of all you should be able to view and edit the files in any text editor, not just specialized IDEs.
+
+It should be readable even if you open the file in a simple text editor like notepad.
+
+There should not be any dependencies.
+
+Should be easy to write.
+
+It should be convertible to HTML, and I will show just why in a moment.
+
+And of course all of the above means that it can be used by anyone, not just developers, because obviously not only developers should write documentation.
+--
 
 [transition="fade-out, slide-in"]
 == Why not another markup syntax?
@@ -346,9 +565,21 @@ image::morpheus.png[width="80%"]
 |{empty}
 |===
 
+[.notes]
+--
+This can be illustrated by comparing a sample of AsciiDoc with an equivalent sample of Markdown.
+--
+
 == Markdown vs. Asciidoc
 
 image::markdown_vs_asciidoc.png[]
+
+[.notes]
+--
+The AsciiDoc version is, arguably, easier to write. For example, you don’t need to worry about indentation.
+
+But the Markdown version is much easier to read. The nesting of list items is apparent to the eye in the source, not just in the processed document.
+--
 
 == What next?
 
@@ -369,6 +600,21 @@ So now what?
 |{empty}
 |===
 
+[.notes]
+--
+Because markdown is easily convertible to other formats, including HTML, we can easily publish our documentation.
+
+Just some of the examples include Jekyll, HUGO, Hexo, Docusaurus, Eleventy.
+
+They all share one similar feature – you can write your docs in Markdown and the tool will create the website out of those.
+
+For obvious reasons, your documentation is in the plaintext files, anyone can read it, modify it and it’s easily accessible.
+
+So in the end, you get all the benefits of writing and storing documentation in markdown, and at the same time you have a usable website where all of it is tied together for others to read.
+
+You could even take this one step further, add direct edits through a web-interface, and make them into PRs in the source code.
+--
+
 == Ease of Use
 
 [cols="70a,30a"]
@@ -380,3 +626,13 @@ Whichever tool you pick, it should have a very low entry threshold...
 |image::reuse.png[]
 |===
 
+[.notes]
+--
+Of course whatever tool you pick, it should have a very low entry threshold because if your developers need to learn a new “documentation tool” – the docs will be nowhere better that what you have on confluence, even worse most likely.
+
+So if you for example have a front-end project, then if the tool requires to use js for example to write docs, then that’s fine, your devs know js. But if you have some .net or java project and you tell your devs, “Well, we’re going to be using docusaurus now to document stuff, it’s great and has a lot of features, but you need to learn html and js to use it.”
+--
+
+== Thank You
+
+== Questions?
