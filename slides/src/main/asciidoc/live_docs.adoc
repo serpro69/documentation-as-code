@@ -134,7 +134,12 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 
 == How many confluence bookmarks do you have?
 
-WARNING: **If you need to bookmark confluence pages, it's because they're hard to find**
+[cols="63a,39a"]
+|===
+|
+**If you need to bookmark confluence pages, it's because they're hard to find**
+|{empty}
+|===
 
 [cols="33a,33a,33a"]
 |===
