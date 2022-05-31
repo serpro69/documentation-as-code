@@ -282,4 +282,124 @@ image::cypress_testing_strategies.png[]
 
 image::cypress_cicd.png[]
 
+== What if I told you
+
+image::morpheus.png[]
+
+== The Problem
+
+[cols="60a,48a"]
+|===
+|How do we keep the documentation with the source code, and at the same time make it accessible to everyone?
+|
+|===
+
+[transition="fade-out, slide-in"]
+== The Solution
+
+[transition="fade-in, fade-out"]
+== The Solution
+
+**Markdown**
+
+== Markdown
+
+[%step]
+* Viewable / Editable in any text editor
+* Very readable even when opened in a notepad
+* Platform-agnostic, plaintext, and zero-dependencies on external software
+* Easier to write than HTML
+* Eeasily converted to HTML
+* Can be used by anyone, not just developers
+
+== Why not another markup syntax?
+
+**What distinguishes Markdown** from many other lightweight markup syntaxes, which are arguably often easier to write, **is its readability**.
+
+.As Gruber writes:
+> The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
+
+== Markdown vs. Asciidoc
+
+[cols="50a,50a"]
+|===
+|
+[source,markdown]
+====
+1.  List item one.
+
+    List item one continued with a second paragraph followed by an
+    Indented block.
+
+        $ ls *.sh
+        $ mv *.sh ~/tmp
+
+    List item continued with a third paragraph.
+
+2.  List item two continued with an open block.
+
+    This paragraph is part of the preceding list item.
+
+1. This list is nested and does not require explicit item continuation.
+
+       This paragraph is part of the preceding list item.
+
+2. List item b.
+
+    This paragraph belongs to item two of the outer list.
+====
+
+|
+[source,asciidoc]
+====
+1. List item one.
++
+List item one continued with a second paragraph followed by an
+Indented block.
++
+.................
+$ ls *.sh
+$ mv *.sh ~/tmp
+.................
++
+List item continued with a third paragraph.
+2. List item two continued with an open block.
++
+--
+This paragraph is part of the preceding list item.
+a. This list is nested and does not require explicit item
+continuation.
++
+This paragraph is part of the preceding list item.
+b. List item b.
+This paragraph belongs to item two of the outer list.
+--
+====
+|===
+
+== What next?
+
+We have a few dozen docs written in markdown which are stored with the code.
+So now what?
+
+== Static Site Generation
+
+* Jekyll
+* HUGO
+* Hexo
+* Docusaurus
+* Eleventy
+* ...
+
+== Ease of Use
+
+[cols="70a,30a"]
+|===
+|
+Whichever tool you pick, it should have a very low entry threshold...
+
+\...for everyone who is going to use it, not just a small group of devs
+|image::reuse.png[]
+|===
+
 // TODO == Documentation needs to grow with the software
