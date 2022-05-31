@@ -633,6 +633,19 @@ Of course whatever tool you pick, it should have a very low entry threshold beca
 So if you for example have a front-end project, then if the tool requires to use js for example to write docs, then that’s fine, your devs know js. But if you have some .net or java project and you tell your devs, “Well, we’re going to be using docusaurus now to document stuff, it’s great and has a lot of features, but you need to learn html and js to use it.”
 --
 
+[transition="slide-in, fade-out"]
 == Thank You
 
+[transition="fade-in, fade-out"]
 == Questions?
+
+[cols="20a,60a,20a"]
+|===
+|
+^.^|
+**If you didn't document it...**
+
+**\...you didn't do it.**
+|
+image::we_all_had_dreams.png[]
+|===
