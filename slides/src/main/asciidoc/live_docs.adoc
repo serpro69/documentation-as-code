@@ -254,37 +254,44 @@ Doesn't all of this seem backwards to you?
 
 == An example of a well-documented software
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_why.png[]
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_guides.png[]
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_api.png[]
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_plugins.png[]
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_examples.png[]
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_testing_strategies.png[]
 
+[transition="fade-in, fade-out"]
 == An example of a well-documented software
 
 image::cypress_cicd.png[]
 
 == What if I told you
 
-image::morpheus.png[]
+image::morpheus.png[width="180%"]
 
 == The Problem
 
@@ -302,6 +309,7 @@ image::morpheus.png[]
 
 **Markdown**
 
+[transition="fade-in, fade-out"]
 == Markdown
 
 [%step]
@@ -312,12 +320,20 @@ image::morpheus.png[]
 * Eeasily converted to HTML
 * Can be used by anyone, not just developers
 
+[transition="fade-out, slide-in"]
 == Why not another markup syntax?
 
+[cols="70a,30a"]
+|===
+|
 **What distinguishes Markdown** from many other lightweight markup syntaxes, which are arguably often easier to write, **is its readability**.
-
+|{empty}
+|
 .As Gruber writes:
 > The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
+|{empty}
+|===
+
 
 == Markdown vs. Asciidoc
 
@@ -325,7 +341,7 @@ image::morpheus.png[]
 |===
 |
 [source,markdown]
-====
+----
 1.  List item one.
 
     List item one continued with a second paragraph followed by an
@@ -347,11 +363,10 @@ image::morpheus.png[]
 2. List item b.
 
     This paragraph belongs to item two of the outer list.
-====
-
+----
 |
 [source,asciidoc]
-====
+----
 1. List item one.
 +
 List item one continued with a second paragraph followed by an
@@ -374,7 +389,7 @@ This paragraph is part of the preceding list item.
 b. List item b.
 This paragraph belongs to item two of the outer list.
 --
-====
+----
 |===
 
 == What next?
@@ -384,12 +399,17 @@ So now what?
 
 == Static Site Generation
 
+[cols="30a,70a"]
+|===
+|
 * Jekyll
 * HUGO
 * Hexo
 * Docusaurus
 * Eleventy
 * ...
+|{empty}
+|===
 
 == Ease of Use
 
@@ -402,4 +422,4 @@ Whichever tool you pick, it should have a very low entry threshold...
 |image::reuse.png[]
 |===
 
-// TODO == Documentation needs to grow with the software
+----
