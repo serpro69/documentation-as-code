@@ -134,10 +134,10 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 
 == How many confluence bookmarks do you have?
 
+WARNING: **If you need to bookmark confluence pages, it's because they're hard to find**
 
 [cols="33a,33a,33a"]
 |===
-3+<|If you need to bookmark confluence pages, it's because they're hard to find
 |image:mscott_what_do_you_use_confluence_for.png[]
 |image:dwight_to_keep_secrets.png[]
 |image:mscott_surprise.png[]
@@ -251,5 +251,35 @@ Doesn't all of this seem backwards to you?
 ** "Every repo must have a README with A, B, C sections"
 ** "Every repo must have API documentation"
 ** ...
+
+== An example of a well-documented software
+
+== An example of a well-documented software
+
+image::cypress_why.png[]
+
+== An example of a well-documented software
+
+image::cypress_guides.png[]
+
+== An example of a well-documented software
+
+image::cypress_api.png[]
+
+== An example of a well-documented software
+
+image::cypress_plugins.png[]
+
+== An example of a well-documented software
+
+image::cypress_examples.png[]
+
+== An example of a well-documented software
+
+image::cypress_testing_strategies.png[]
+
+== An example of a well-documented software
+
+image::cypress_cicd.png[]
 
 // TODO == Documentation needs to grow with the software
