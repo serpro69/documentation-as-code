@@ -329,10 +329,16 @@ image::morpheus.png[width="100%"]
 |{empty}
 |===
 
-<<<
+[transition="fade-in, fade-out"]
+== Why not another markup syntax?
 
+[cols="70a,30a"]
+|===
+|
 .As Gruber writes:
 > The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
+|{empty}
+|===
 
 == Markdown vs. Asciidoc
 
