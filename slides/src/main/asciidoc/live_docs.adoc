@@ -24,7 +24,6 @@ include::_doc_general_attributes.adoc[]
 :revealjs_height: 1000
 :stem: latexmath
 
-//== Часть 1. Введение
 :!figure-caption:
 
 icon:envelope[size=lg] sergei.prodanov@cegal.com
@@ -162,7 +161,7 @@ It can be simply incomplete, and of course it is sometimes lacking altogether.
 
 [.notes]
 --
-It might not be very obvious right away, but if you think about it – you will see the truth in this simple statement.
+And I really like this statement, because, well...
 
 Who cares about your new shiny feature if it’s undocumented and no one knows what it does or how to use it?
 
@@ -181,7 +180,7 @@ Which is why you have things like changelogs, which are of course also part of d
 
 [.notes]
 --
-And this is a problem in any software ecosystem, whichever programming stack you use, and has been mentioned by many people around the industry.
+And this is a problem in any software ecosystem, whichever programming stack you use, whether it's java, or javascript, or .NET. And it has been mentioned by many people around the industry.
 
 If you’re the only one who understands what your library does – it doesn’t do any good. And the greatest library would fail if the only way to learn and understand it was reading the code.
 --
@@ -195,10 +194,6 @@ image:open-an-issue_vs_read-the-docs.png[width="250%"]
 I’m sure everyone has experienced a situation like this.
 
 The problem is not that people don’t like to read, which is also true of course. Who ever reads a user manual when they buy a some new home appliance? You just plug it in, press the red button, and then figure out the rest, right.
-
-But the bigger problem, when it comes to software, is that documentation is really hard to find.
-
-You get a new person in the project, and you get bombarded with a ton of questions in Teams, for example. Not because something is undocumented, although that problem is also there in some cases, but even if it is documented – people still can’t find it.
 --
 
 [transition="slide-in, fade-out"]
@@ -207,6 +202,10 @@ You get a new person in the project, and you get bombarded with a ton of questio
 [.notes]
 --
 I think one of the reasons for this problem lays in another question.
+
+It's because documentation is really hard to find.
+
+You get a new person in the project, and you get bombarded with a ton of questions in Teams, for example. Not because something is undocumented, although that problem is also there in some cases, but even if it is documented – people still can’t find it.
 --
 
 [transition="fade-in, fade-out"]
@@ -230,7 +229,9 @@ I think one of the reasons for this problem lays in another question.
 --
 I know I have a lot of bookmarks, some of them I probably didn't even open once, but I still bookmark pages because I know if I do need it - I will have to spend the time again to search for it next time I do need it.
 
-\...but the issue with finding documentation goes even further than this, because \->
+And it's not even about Confluence, which often becomes a very misused tool in itself.
+
+But the issue with finding documentation goes even further than this, because \->
 --
 
 == Confluence isn't the only place where software is documented
@@ -241,7 +242,7 @@ I know I have a lot of bookmarks, some of them I probably didn't even open once,
 
 [cols="30a,70a"]
 |===
-<|
+<|[%step]
 * Code
 * Confluence
 * Jira
@@ -256,7 +257,7 @@ I know I have a lot of bookmarks, some of them I probably didn't even open once,
 --
 Code mostly in form of inline comments, something like javadocs or jsdocs, sometimes even in the form of logging statements.
 
-If Confluence / Jira is used in the project – chances are this is where most of documentation will live if you’re using these tools. And you might ask “Why use jira for documenting things if you have confluence?” But if you think about it – there are a lot of things that happen in jira, like decisions that are made for implementing a new feature or fixing a bug, which just stay there in those jira tickets, and they consequentially become part of your documentation.
+If you use Atlassian tools, then Confluence / Jira are where most of documentation will live. And you might ask “Why use jira for documenting things if you have confluence?” Well, it's not intentional, right, it's a consequence of poor documentation princinples. If you think about it – there are a lot of things that happen in jira, like decisions that are made for implementing a new feature or fixing a bug, which just stay there in those jira tickets. So they inevitably become part of your documentation.
 
 Some documentation, like decision making, could end up in Code Reviews.
 
@@ -288,6 +289,13 @@ I sometimes think of confluence is a kind of documentation graveyard. You docume
 
 >|image:a_new_developer.png[{image-80-width}]
 |===
+
+[.notes]
+--
+And this makes it harder to maintain and keep up to date.
+
+Which in turn makes documentation loose its value.
+--
 
 == "`Great software does not need documentation`" (...or tests)
 
@@ -328,6 +336,8 @@ The thing is, you don’t write documentation for your present self.
 But enough about the problem itself, let's look at the root cause.
 
 So why do we, as developers, often write poor documentation?
+
+(And I'm singling out developers because I think that on average we probably document things worse than, say, Product Owners.)
 --
 
 == Common Causes
@@ -349,15 +359,15 @@ So why do we, as developers, often write poor documentation?
 
 [.notes]
 --
-The process of documenting happens outside of the development workflow.
+The process of documenting happens outside of the development workflow. When you’re writing code it does make sense to you -after all, it’s you who’s writing it. So you don’t even consider how another person will perceive your code.
 
-When you’re writing code it does make sense to you -after all, it’s you who’s writing it. So you don’t even consider how another person will perceive your code.
+Documenting something is not the same as implementing it. So good writing requires a slightly different skillset than software development. And that's why I think that POs for example are generally better at this.
 
 Proper documentation requires time and effort. Writing is simply not an easy task. Add to this constant pressure from your boss to deliver something, and you will never even consider writing docs.
 
-Agile development is a fast, unforgiving methodology, and in a sense it doesn’t encourage comprehensive documentation. The reason is simple; the code changes too frequently, and that makes it hard to document. But also in this particular case I think that some people just misunderstand the what agile is and take things like agile manifesto, which says “working software over comprehensive documentation” too literally.
+Plus we have agile development, which is a fast and unforgiving methodology. And in a sense it doesn’t encourage comprehensive documentation. The reason is simple: the code changes too frequently, and that makes it hard to document. But also in this particular case I think that some people just misunderstand the what agile is and take things like agile manifesto, which says “working software over comprehensive documentation” too literally.
 
-And of course pure laziness, because, c’mon, writing documentation can really be boring sometimes, and if you don’t have any processes and complete lack of interest to do so, then of course you will never overcome the laziness.
+And of course pure laziness, because, c’mon, writing documentation can really be boring sometimes. And if you don’t have any processes, and complete lack of interest to document stuff, and you have very little trust in existing documentation, then of course you will never overcome the laziness part on top of all that.
 
 Now, I’m not going to address laziness in this talk or how to develop a “writer’s skillset”, but some of these things we can actually improve upon or eliminate altogether.
 --
@@ -411,7 +421,7 @@ But before we proceed, let’s see what makes up good documentation in general.
 
 [.notes]
 --
-So how can we fix this?
+So how can we fix these two previously mentioned problems and acheive "comprehensive and clear documentation"?
 
 First and foremost, documentation must live as close to code as possible, that is – ideally it should all be in the same source code repository.
 
@@ -579,7 +589,7 @@ And of course all of the above means that it can be used by anyone, not just dev
 |===
 |
 .As Gruber writes:
-> The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
+> The **overriding design goal** for Markdown’s formatting syntax is to make it **as readable as possible**. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. (http://daringfireball.net/projects/markdown/)
 |{empty}
 |===
 
@@ -603,6 +613,8 @@ But the Markdown version is much easier to read. The nesting of list items is ap
 
 We have a few dozen docs written in markdown which are stored with the code.
 So now what?
+
+image::what_do_we_want.jpg[width="50%"]
 
 == Static Site Generation
 
@@ -652,6 +664,76 @@ So if you for example have a front-end project, then if the tool requires to use
 --
 
 [transition="slide-in, fade-out"]
+== Demo
+
+[.notes]
+--
+// Since I probably take a lot of this stuff for granted now
+// I think it's better to document what I want to show in the demo
+**1. Go through existing docs**
+
+We have a landing page, which can usually be auto-generated directly from a README file
+
+Then there's an **API** reference (no need to open that since it's empty), we have the **User Guide** with several pages (click on the dropdown and show around)
+
+And then some **Informational** pages as well
+
+**2. Making a new Wiki page**
+
+Let's say we've added something completely new, and we want to create a new wiki-page for it.
+
+> * create new file `test.md` in `docs/src/orchid/resources/wiki`
+> * insert live-template called `test-page`
+>   * don't forget to add the page to `summary.md`
+
+Ok, this is a bit boring, let's say we want to share some code snippets. I for one, love code example in documentation, they are a great way to get you started on a new library.
+
+Of course, since it's just markdown, we can simply create a code-block and put some code there.
+
+> * insert live-template `hello-world` into `test.md` file
+
+**3. Loading file contents on page**
+
+The problem with code examples is that you usually need to copy-paste some code from your sources. Alternatively you can also put a link to a piece of code.
+
+Both of these work fine in the initial stages of documenting software, but the maintenance of documentation can quickly become a pain. Your code changes, and you forget to update the documentation right away. Or your link becomes dead. Or if you've created a permalink, then it points to a code which isn't valid anymore.
+
+Well, we can take it one step further and dynamically load some a piece of code to a page.
+
+> * create a file `test.kt` in `core/src/integration/kotlin/io/github/serpro69/kfaker/docs`
+> * add a "hello world" `main` function
+> * surround with `// START code_snippet` and `// END code_snippet` comments
+> * delete the hardcoded code-block
+> * and insert `kotlin-code-snippet` live-template into `test.md` file
+
+Since this is a JVM library, we probably want to provide examples for multiple languages, well at least java and kotlin.
+
+> * add a new java `test` class next to `test.kt`
+> * add a main function to it with `System.out.println("hello, world")`
+> * surround with `// START code_snippet_java` and `// END code_snippet_java` comments
+> * remove the code block from `test.md`
+> * insert `tabs` live-template, adding the respective snippet names
+> * *!NB might need to re-build the site*
+
+So now, if our code changes
+
+> * go ahead and change the main function to print something else in both kotlin and java files
+
+Our documentation will be automatically updated.
+
+**4. Loading code snippets from test code**
+
+So I personally use this a lot with the test code, mostly integration tests. That way, I get both the tests which are verifying some part of functionality, and at the same I have live code examples in documentation.
+
+> * open `FakerConfiguration` test class and show the first test for `Deterministic Random`
+> * open the "Faker Configuration" page in the docs and show the code snippet from the test.
+
+And this is what I really mean by "living documentation" - a documentation that lives with the code and more importantly, which evolves along with that code.
+
+And then you can take it to the next level, do a proper BDD, where you have test code also describing what your software does, and imagine how easy it would be to say, onboard a new developer and get him started on implementing a new feature of fixing a bug.
+--
+
+[transition="fade-in, fade-out"]
 == Thank You
 
 [transition="fade-in, fade-out"]
