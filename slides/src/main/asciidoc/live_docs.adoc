@@ -201,10 +201,15 @@ But the bigger problem, when it comes to software, is that documentation is real
 You get a new person in the project, and you get bombarded with a ton of questions in Teams, for example. Not because something is undocumented, although that problem is also there in some cases, but even if it is documented – people still can’t find it.
 --
 
+[transition="slide-in, fade-out"]
 == But why don't people read the docs?
 
-// TODO leave empty?
+[.notes]
+--
+I think one of the reasons for this problem lays in another question.
+--
 
+[transition="fade-in, fade-out"]
 == How many confluence bookmarks do you have?
 
 [cols="63a,39a"]
@@ -220,6 +225,17 @@ You get a new person in the project, and you get bombarded with a ton of questio
 |image:dwight_to_keep_secrets.png[]
 |image:mscott_surprise.png[]
 |===
+
+[.notes]
+--
+I know I have a lot of bookmarks, some of them I probably didn't even open once, but I still bookmark pages because I know if I do need it - I will have to spend the time again to search for it next time I do need it.
+
+\...but the issue with finding documentation goes even further than this, because \->
+--
+
+== Confluence isn't the only place where software is documented
+
+{empty}
 
 == Where documentation lives?
 
@@ -249,6 +265,7 @@ Some documentation can be shared in emails and teams.
 And of course we can’t forget the whiteboards that are never erased.
 --
 
+////
 == Confluence Is Where Documentation Goes To Die
 
 The one thing you can be sure of if you're using Confluence to document your software is that, **given time, any documentation you have written on Confluence will be hopelessly out of date.**
@@ -257,6 +274,7 @@ The one thing you can be sure of if you're using Confluence to document your sof
 --
 I sometimes think of confluence is a kind of documentation graveyard. You document something, it eventually gets hopelessly out of date and dies out. And this happens for several reasons.
 --
+////
 
 == Lack of Trust `==` Significantly Reduced Value
 
@@ -344,12 +362,12 @@ And of course pure laziness, because, c’mon, writing documentation can really 
 Now, I’m not going to address laziness in this talk or how to develop a “writer’s skillset”, but some of these things we can actually improve upon or eliminate altogether.
 --
 
-== Confluence – A Documentation Graveyard 2.0
+== Documentation Graveyard 2.0
 
 [cols="80a,35a"]
 |===
 |
-**One of the reasons why Confluence ends up being a graveyard for docs is that it is outside the normal software development workflow.**
+**One of the reasons why a tool such as Confluence ends up being a graveyard for docs is that it is outside the normal software development workflow.**
 
 Only after the code is merged do you remember (that is, if you remember) to go to this separate place, and only then you start thinking about how to document what you had already released.
 
@@ -357,24 +375,24 @@ Doesn't all of this seem backwards to you?
 |
 |===
 
-[.notes]
---
-So I’d like to address the two issues that I mentioned previously, that is:
-- documenting happens outside of normal workflow
-- frequent changes to software are not making it easier to keep documentation up-to-date
---
+== What makes well-documented software?
 
-== What makes good documentation?
-
+[%step]
 * High-level architecture designs.
 * High-level overviews of each part of the library, touching on key objects and methods.
 * Practical examples showing how to handle common use cases.
 * Full API documentation for all public functionality.
-* Internal functionality should ideally be also documented to help contributors understand the code better.
+** Internal functionality should ideally be also documented to help contributors understand the code better.
 * Comments throughout the code.
+* Easily accessible to everyone && Easy to maintain by everyone.
 
 [.notes]
 --
+So I’d like to address the two issues that I mentioned previously, that is:
+
+* documenting happens outside of normal workflow
+* frequent changes to software are not making it easier to keep documentation up-to-date
+
 But before we proceed, let’s see what makes up good documentation in general.
 --
 
